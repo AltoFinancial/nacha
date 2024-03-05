@@ -167,13 +167,7 @@ defmodule Nacha.Parser do
 
     descriptive_date = String.trim(descriptive_date)
 
-    descriptive_date =
-      if descriptive_date == "" do
-        nil
-      else
-        {:ok, descriptive_date} = parse_ach_date(descriptive_date)
-        descriptive_date
-      end
+    descriptive_date = if descriptive_date == "", do: nil, else: descriptive_date
 
     batch_header =
       BatchHeader.validate(%BatchHeader{

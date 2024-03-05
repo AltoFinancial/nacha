@@ -24,7 +24,7 @@ defmodule Nacha.Records.BatchHeader do
       {:company_id, :string, 10},
       {:standard_entry_class, :string, 3},
       {:entry_description, :string, 10},
-      {:descriptive_date, :date, 6},
+      {:descriptive_date, :string, 6},
       {:effective_date, :date, 6},
       {:settlement_date, :string, 3},
       {:originator_status, :string, 1, "1"},
