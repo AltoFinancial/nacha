@@ -35,7 +35,7 @@ defmodule Nacha.File do
           optional(:creation_date) => Date.t(),
           optional(:creation_time) => Time.t(),
           optional(:effective_date) => Date.t(),
-          optional(:descriptive_date) => Date.t(),
+          optional(:descriptive_date) => String.t(),
           optional(:file_id_modifier) => String.t(),
           optional(:entry_description) => String.t(),
           immediate_destination: String.t(),
